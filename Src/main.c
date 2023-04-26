@@ -107,6 +107,8 @@ int main(void)
   //TIM1触发ADC中断，stm32g4xx_mc_it.c的void ADC1_2_IRQHandler()
   //然后在mc_tasks.c的uint8_t TSK_HighFrequencyTask()完成FOC坐标转换和SVPWM
   //最后调整TIM1占空比
+
+  //Systick 中断默认为 500us 的定时中断
   /* USER CODE END 2 */
 
   /* Infinite loop */
