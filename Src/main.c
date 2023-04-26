@@ -86,7 +86,8 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+  //MX_MotorControl_Init();马达控制初始化
+  //MX_NVIC_Init();中断优先级控制，使能中断
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -98,12 +99,14 @@ int main(void)
   MX_DAC1_Init();
   MX_TIM1_Init();
   MX_USART2_UART_Init();
-  MX_MotorControl_Init();
+  MX_MotorControl_Init(); 
 
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
-
+  //TIM1触发ADC中断，stm32g4xx_mc_it.c的void ADC1_2_IRQHandler()
+  //然后在mc_tasks.c的uint8_t TSK_HighFrequencyTask()完成FOC坐标转换和SVPWM
+  //最后调整TIM1占空比
   /* USER CODE END 2 */
 
   /* Infinite loop */

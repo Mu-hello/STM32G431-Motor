@@ -800,7 +800,7 @@ __attribute__((section (".ccmram")))
 __weak uint8_t TSK_HighFrequencyTask(void)
 {
   /* USER CODE BEGIN HighFrequencyTask 0 */
-
+  //高频任务函数
   /* USER CODE END HighFrequencyTask 0 */
 
   uint16_t hFOCreturn;
@@ -817,7 +817,11 @@ __weak uint8_t TSK_HighFrequencyTask(void)
     }
   }
   /* USER CODE BEGIN HighFrequencyTask SINGLEDRIVE_1 */
-
+  //hFOCreturn = FOC_CurrControllerM1();
+  //上面这个函数包含了
+  //1。读取电流PWMC_GetPhaseCurrents(pwmcHandle[M1], &Iab);
+  //2.Clark/Park变换，PID调整，和反Park变换
+  //3.PWMC_GetPhaseCurrents(pwmcHandle[M1], &Iab);
   /* USER CODE END HighFrequencyTask SINGLEDRIVE_1 */
   hFOCreturn = FOC_CurrControllerM1();
   /* USER CODE BEGIN HighFrequencyTask SINGLEDRIVE_2 */
@@ -845,7 +849,9 @@ __weak uint8_t TSK_HighFrequencyTask(void)
       (void)VSS_CalcElAngle(&VirtualSpeedSensorM1, &hObsAngle);
     }
     /* USER CODE BEGIN HighFrequencyTask SINGLEDRIVE_3 */
-
+    //SPD_GetElAngle电角度读取
+    //SPD_GetElAngle读取电流
+    //
     /* USER CODE END HighFrequencyTask SINGLEDRIVE_3 */
   }
   DAC_Exec(&DAC_Handle);
