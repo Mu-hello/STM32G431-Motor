@@ -109,6 +109,7 @@ int main(void)
   //最后调整TIM1占空比
 
   //Systick 中断默认为 500us 的定时中断
+  //中频任务在此，状态机
   /* USER CODE END 2 */
 
   /* Infinite loop */

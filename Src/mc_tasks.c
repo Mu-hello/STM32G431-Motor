@@ -954,7 +954,7 @@ __weak void TSK_SafetyTask(void)
 __weak void TSK_SafetyTask_PWMOFF(uint8_t bMotor)
 {
   /* USER CODE BEGIN TSK_SafetyTask_PWMOFF 0 */
-
+  //PWMC_CheckOverCurrent是安全任务，判断过温，过流，欠压，过压
   /* USER CODE END TSK_SafetyTask_PWMOFF 0 */
   uint16_t CodeReturn = MC_NO_ERROR;
   uint16_t errMask[NBR_OF_MOTORS] = {VBUS_TEMP_ERR_MASK};
