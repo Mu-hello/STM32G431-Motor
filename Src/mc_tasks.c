@@ -60,6 +60,14 @@
   #define STOPPERMANENCY_TICKS   (uint16_t)((SYS_TICK_FREQUENCY * STOPPERMANENCY_MS)  / ((uint16_t)1000))
   #define STOPPERMANENCY_TICKS2  (uint16_t)((SYS_TICK_FREQUENCY * STOPPERMANENCY_MS2) / ((uint16_t)1000))
 
+/*
+static FOCVars_t FOCVars[NBR_OF_MOTORS];
+上面这个，变量FOCVars结构体变量成员有Ia，Ib
+Curr_Components Iab_Value;
+Iab_Value = FOCVars[0].Iab;
+Ia = Iab_Value. qI_Component1 ;
+Ib = Iab_Value. qI_Component2 ;
+*/
 /* USER CODE END Private define */
 #define VBUS_TEMP_ERR_MASK (MC_OVER_VOLT| MC_UNDER_VOLT| MC_OVER_TEMP)
 /* Private variables----------------------------------------------------------*/
