@@ -28,7 +28,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "regular_conversion_manager.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -38,6 +38,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define MIN_SPEED 300 //300rpm
+#define MAX_SPEED 800 //800rpm
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -48,6 +50,11 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+static uint32_t Run_Count = 0;
+RegConv_t ADC_Userconv;
+uint8_t ADC_UserHandle;
+uint16_t ADC_UserValue;
+uint16_t Set_Speed;
 
 /* USER CODE END PV */
 
@@ -60,7 +67,71 @@ static void MX_NVIC_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+/*Hand on 1 - Sensorless speed mode*/
+void HandsOn1(void)
+{
+  /*300RPM,1000ms*/
+  MC_ProgramSpeedRampMotor1(300/6,1000);
+  if(Run_Count == 0)
+  {
+    /*Start motor*/
+    MC_StartMotor1();
+  }
+  HAL_Delay(1000);
 
+  /*600RPM,1000ms*/
+  MC_ProgramSpeedRampMotor1(600/6,1000);
+  HAL_Delay(1000);
+
+  Run_Count++;
+  if(Run_Count > 5)
+  {
+    Run_Count = 5;
+    /*Stop motor*/
+    MC_StopMotor1();
+    while (1)
+    {
+      /* code */
+      ;
+    }
+  }
+}
+
+/*Hand On 2 - User ADC control speed*/
+void HandsOn2_Init(void)
+{
+  ADC_Userconv.regADC = ADC1;
+  ADC_Userconv.channel = MC_ADC_CHANNEL_8;
+  ADC_Userconv.samplingTime = ADC_SAMPLETIME_92CYCLES_5;
+  ADC_UserHandle = RCM_RegisterRegConv(&ADC_Userconv);
+
+  /*Start motor*/
+  MC_StartMotor1();
+}
+
+void HandsOn2(void)
+{
+  HAL_Delay(200);
+  /*检查状态*/
+  if(RCM_GetUserConvState() == RCM_USERCONV_IDLE)
+  {
+    /*若Idle，创建新的conversion request*/
+    RCM_RequestUserConv(ADC_UserHandle);
+  }
+  else if(RCM_GetUserConvState() == RCM_USERCONV_EOC)
+  {
+    /*完成了，读captured value*/
+    ADC_UserValue = RCM_GetUserConv();
+  }
+  /*计算设定速度值*/
+  Set_Speed = (ADC_UserValue >>4)/8 + MIN_SPEED;
+  if(Set_Speed > MAX_SPEED)
+  {
+    Set_Speed = MAX_SPEED;
+  }
+  /*设定新的speed ramp*/
+  MC_ProgramSpeedRampMotor1(Set_Speed/6,100);
+}
 /* USER CODE END 0 */
 
 /**
@@ -79,7 +150,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+  
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -99,7 +170,7 @@ int main(void)
   MX_DAC1_Init();
   MX_TIM1_Init();
   MX_USART2_UART_Init();
-  MX_MotorControl_Init(); 
+  MX_MotorControl_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
@@ -110,12 +181,14 @@ int main(void)
 
   //Systick 中断默认为 500us 的定时中断
   //中频任务在此，状态机
+	HandsOn2_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    HandsOn2();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

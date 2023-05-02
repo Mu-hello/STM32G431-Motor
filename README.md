@@ -4,16 +4,17 @@ hust计控课设，驱动三相无刷电机并实现PI调速
 此文件编码格式 UTF-8
 
 # 开发环境
-MCSDK
-
-cubemx6.5.0
-
-keil5:在keil5中记得将user文件夹的文件加入工作区，并且加入include读取路径
+MC_SDK5.4.0+cubemx6.5.0+keil5
 
 # 注意事项
 在.gitignore文件中现在不忽略追踪了
 
 记得一定用git branch -m master main把git默认的master分支重命名为main之后再进行操作
+
+Keil5代码优化等级选择O1
+
+# 实验进展
+跟着"MC_SDK5.4"此ppt做完了试验1，2
 
 # git步骤(只操作main)
 
