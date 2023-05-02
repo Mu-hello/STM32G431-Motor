@@ -33,7 +33,16 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+typedef struct
+{
+  PID_Handle_t * pPIDSpeed;
+  PID_Handle_t * pPIDIq;
+  PID_Handle_t * pPIDId;
+  PID_Handle_t * pPIDFluxWeakening;
+  PWMC_Handle_t * pPWMnCurrFdbk;
+  RevUpCtrl_Handle_t * pRevupCtrl;
+  //未完
+}MCT_Handle_t;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -210,6 +219,19 @@ int main(void)
   //中频任务在此，状态机
 	HandsOn2_Init();
   HAL_TIM_Base_Start_IT(&htim2);  //启动TIM2，周期为500ms
+  extern PID_Handle_t *pPIDSpeed[1];
+  static int16_t Speed_Kp,Speed_Ki;
+
+  /*得当前速度PI值*/
+  Speed_Kp = PID_GetKP(pPIDSpeed[0]);
+  Speed_Ki = PID_GetKI(pPIDSpeed[0]);
+
+  /*设定新PI值*/
+  PID_SetKP(pPIDSpeed[0],Speed_Kp*2);
+  PID_SetKI(pPIDSpeed[0],Speed_Ki*2);
+
+  // MC_ProgramSpeedRampMotor1(3000/6,1000);
+  // MC_StartMotor1();
   /* USER CODE END 2 */
 
   /* Infinite loop */

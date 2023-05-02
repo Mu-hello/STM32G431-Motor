@@ -86,7 +86,9 @@ static volatile uint16_t hStopPermanencyCounterM1 = ((uint16_t)0);
 static volatile uint8_t bMCBootCompleted = ((uint8_t)0);
 
 /* USER CODE BEGIN Private Variables */
-
+PID_Handle_t * pPIDSpeed[NBR_OF_MOTORS];
+// PID_Handle_t * pPIDIq[NBR_OF_MOTORS];
+// PID_Handle_t * pPIDId[NBR_OF_MOTORS];
 /* USER CODE END Private Variables */
 
 /* Private functions ---------------------------------------------------------*/
