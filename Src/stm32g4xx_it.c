@@ -55,6 +55,7 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
+extern TIM_HandleTypeDef htim2;
 extern DMA_HandleTypeDef hdma_usart2_rx;
 /* USER CODE BEGIN EV */
 
@@ -70,6 +71,20 @@ extern DMA_HandleTypeDef hdma_usart2_rx;
 /* For the available peripheral interrupt handler names,                      */
 /* please refer to the startup file (startup_stm32g4xx.s).                    */
 /******************************************************************************/
+
+/**
+  * @brief This function handles TIM2 global interrupt.
+  */
+void TIM2_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM2_IRQn 0 */
+  
+  /* USER CODE END TIM2_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim2);
+  /* USER CODE BEGIN TIM2_IRQn 1 */
+
+  /* USER CODE END TIM2_IRQn 1 */
+}
 
 /* USER CODE BEGIN 1 */
 

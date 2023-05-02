@@ -13,8 +13,10 @@ MC_SDK5.4.0+cubemx6.5.0+keil5
 
 Keil5代码优化等级选择O1
 
+TIM2_IRQHandler()在文件"stm32g4xx_it.c"
+
 # 实验进展
-跟着"MC_SDK5.4"此ppt做完了试验1，2
+跟着"MC_SDK5.4"此ppt做完了试验1,2,3
 
 # git步骤(只操作main)
 

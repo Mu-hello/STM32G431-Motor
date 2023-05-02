@@ -1,10 +1,10 @@
 Dependencies for Project 'MCSDK01', Target 'MCSDK01': (DO NOT MODIFY !)
 CompilerVersion: 6160000::V6.16::ARMCLANG
-F (startup_stm32g431xx.s)(0x64508B68)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__MICROLIB SETA 1"-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 535" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32G431xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o mcsdk01/startup_stm32g431xx.o)
-F (../Src/main.c)(0x645095E4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/main.o -MD)
+F (startup_stm32g431xx.s)(0x6451183F)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__MICROLIB SETA 1"-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 535" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32G431xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o mcsdk01/startup_stm32g431xx.o)
+F (../Src/main.c)(0x64512072)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/main.o -MD)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -96,14 +96,14 @@ I (..\Inc\adc.h)(0x64489E80)
 I (..\Inc\cordic.h)(0x64489E80)
 I (..\Inc\dac.h)(0x64489E80)
 I (..\Inc\dma.h)(0x64489E80)
-I (..\Inc\tim.h)(0x64508B65)
+I (..\Inc\tim.h)(0x6451183B)
 I (..\Inc\usart.h)(0x64489E83)
 I (..\Inc\gpio.h)(0x64489E7F)
 F (../Src/gpio.c)(0x64489E7F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/gpio.o -MD)
 I (..\Inc\gpio.h)(0x64489E7F)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -195,7 +195,7 @@ F (../Src/adc.c)(0x64508B62)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=corte
 I (..\Inc\adc.h)(0x64489E80)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -287,7 +287,7 @@ F (../Src/cordic.c)(0x64489E80)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=co
 I (..\Inc\cordic.h)(0x64489E80)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -379,7 +379,7 @@ F (../Src/dac.c)(0x64489E80)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=corte
 I (..\Inc\dac.h)(0x64489E80)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -471,7 +471,7 @@ F (../Src/dma.c)(0x64489E80)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=corte
 I (..\Inc\dma.h)(0x64489E80)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -562,7 +562,7 @@ I (..\Inc\mc_api.h)(0x64489E58)
 F (../Src/motorcontrol.c)(0x64489E58)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/motorcontrol.o -MD)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -669,7 +669,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -743,7 +743,7 @@ I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\sto_pll_speed_pos_fdbk.
 F (../Src/mc_config.c)(0x64489E58)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/mc_config.o -MD)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -851,7 +851,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -902,7 +902,7 @@ I (..\Inc\mcp_config.h)(0x64489E58)
 F (../Src/mc_tasks.c)(0x6448A87F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/mc_tasks.o -MD)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -1012,7 +1012,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -1069,7 +1069,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -1158,7 +1158,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -1214,7 +1214,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -1286,7 +1286,7 @@ I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\ramp_ext_mngr.h)(0x6176
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\circle_limitation.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\sto_pll_speed_pos_fdbk.h)(0x6176BBE6)
 I (..\Inc\mc_api.h)(0x64489E58)
-F (../Src/stm32g4xx_mc_it.c)(0x64508CE0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_mc_it.o -MD)
+F (../Src/stm32g4xx_mc_it.c)(0x6451183A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_mc_it.o -MD)
 I (..\Inc\mc_config.h)(0x64489E58)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
@@ -1305,7 +1305,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -1381,7 +1381,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h)(0x642428EF)
 F (../Src/mc_parameters.c)(0x64489E59)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/mc_parameters.o -MD)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -1487,7 +1487,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -1580,7 +1580,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -1638,7 +1638,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -1695,7 +1695,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -1754,7 +1754,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -1825,7 +1825,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -1868,11 +1868,11 @@ I (..\Inc\pmsm_motor_parameters.h)(0x64489E59)
 I (..\Inc\drive_parameters.h)(0x64489E58)
 I (..\Inc\power_stage_parameters.h)(0x64489E59)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mcptl.h)(0x6176BBE6)
-F (../Src/tim.c)(0x64508B65)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/tim.o -MD)
-I (..\Inc\tim.h)(0x64508B65)
+F (../Src/tim.c)(0x6451183B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/tim.o -MD)
+I (..\Inc\tim.h)(0x6451183B)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -1964,7 +1964,7 @@ F (../Src/usart.c)(0x64489E83)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cor
 I (..\Inc\usart.h)(0x64489E83)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2052,10 +2052,10 @@ I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\ramp_ext_mngr.h)(0x6176
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\circle_limitation.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\sto_pll_speed_pos_fdbk.h)(0x6176BBE6)
 I (..\Inc\mc_api.h)(0x64489E58)
-F (../Src/stm32g4xx_it.c)(0x64489E5A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_it.o -MD)
+F (../Src/stm32g4xx_it.c)(0x64511D82)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_it.o -MD)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2143,11 +2143,11 @@ I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\ramp_ext_mngr.h)(0x6176
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\circle_limitation.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\sto_pll_speed_pos_fdbk.h)(0x6176BBE6)
 I (..\Inc\mc_api.h)(0x64489E58)
-I (..\Inc\stm32g4xx_it.h)(0x64489E5A)
+I (..\Inc\stm32g4xx_it.h)(0x6451183C)
 F (../Src/stm32g4xx_hal_msp.c)(0x64489E83)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_msp.o -MD)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2237,7 +2237,7 @@ I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\sto_pll_speed_pos_fdbk.
 I (..\Inc\mc_api.h)(0x64489E58)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_adc.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2277,7 +2277,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_adc_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2318,7 +2318,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_ll_adc.o -MD)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2358,7 +2358,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_rcc.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2398,7 +2398,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_rcc_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2438,7 +2438,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_flash.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2478,7 +2478,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_flash_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2518,7 +2518,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_flash_ramfunc.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2558,7 +2558,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_gpio.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2598,7 +2598,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_exti.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2638,7 +2638,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_dma.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2678,7 +2678,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_dma_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2718,7 +2718,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_pwr.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2758,7 +2758,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_pwr_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2798,7 +2798,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_cortex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2838,7 +2838,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cordic.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_cordic.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2878,7 +2878,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_dac.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2918,7 +2918,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_dac_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2958,7 +2958,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_tim.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -2998,7 +2998,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_tim_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -3038,7 +3038,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_uart.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -3078,7 +3078,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c)(0x642428EF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_hal_uart_ex.o -MD)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x642428EA)
@@ -3129,7 +3129,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3174,7 +3174,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3232,7 +3232,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3289,7 +3289,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3345,7 +3345,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3401,7 +3401,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3458,7 +3458,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3516,7 +3516,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3573,7 +3573,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3632,7 +3632,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3687,7 +3687,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3748,7 +3748,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3804,7 +3804,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3867,7 +3867,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3923,7 +3923,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -3982,7 +3982,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -4042,7 +4042,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -4099,7 +4099,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -4156,7 +4156,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)
@@ -4245,7 +4245,7 @@ I (D:\Stm32\KEIL\ARM\ARMCLANG\include\arm_acle.h)(0x603507C4)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x642428EF)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x642428EA)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
-I (..\Inc\stm32g4xx_hal_conf.h)(0x64508B65)
+I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x642428EF)

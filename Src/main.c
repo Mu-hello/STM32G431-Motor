@@ -197,6 +197,7 @@ int main(void)
   MX_USART2_UART_Init();
   MX_MotorControl_Init();
   MX_TIM3_Init();
+  MX_TIM2_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
@@ -208,6 +209,7 @@ int main(void)
   //Systick 中断默认为 500us 的定时中断
   //中频任务在此，状态机
 	HandsOn2_Init();
+  HAL_TIM_Base_Start_IT(&htim2);  //启动TIM2，周期为500ms
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -215,7 +217,7 @@ int main(void)
   while (1)
   {
     HandsOn2();
-		HandsOn3();
+		//HandsOn3();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -299,7 +301,27 @@ static void MX_NVIC_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+/*TIM2中断回调函数*/
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  static unsigned char ledState = 0;
+  if (htim == (&htim2))
+  { 
+    //电机正常转时500ms周期闪灯
+    if(MC_GetSTMStateMotor1() == RUN)
+    {
+      if (ledState == 0)
+          HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_RESET);
+      else
+          HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_SET);
+      ledState = !ledState;
+    }
+    else  //不正常就关灯
+    {
+      HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_RESET);
+    }
+  }
+}
 /* USER CODE END 4 */
 
 /**

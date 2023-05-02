@@ -94,7 +94,6 @@ void ADC1_2_IRQHandler(void)
   // Clear Flags M1
   LL_ADC_ClearFlag_JEOS( ADC1 );
 
-  //¸ßÆµÈÎÎñ
   (void)TSK_HighFrequencyTask();
 
  /* USER CODE BEGIN HighFreq */
