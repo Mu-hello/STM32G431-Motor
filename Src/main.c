@@ -55,7 +55,8 @@ RegConv_t ADC_Userconv;
 uint8_t ADC_UserHandle;
 uint16_t ADC_UserValue;
 uint16_t Set_Speed;
-
+static uint16_t State_Mark;
+static uint16_t Fault_Mark;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -132,6 +133,30 @@ void HandsOn2(void)
   /*设定新的speed ramp*/
   MC_ProgramSpeedRampMotor1(Set_Speed/6,100);
 }
+
+/*Hand On 3 -Fault clear*/
+void HandsOn3(void)
+{
+  /*读电机状态*/
+  State_Mark = MC_GetSTMStateMotor1();
+  /*读错误状态*/
+  Fault_Mark = MC_GetOccurredFaultsMotor1();
+
+  if(Fault_Mark != MC_NO_FAULTS)
+  {
+    HAL_Delay(2000);
+    /*清除错误状态*/
+    MC_AcknowledgeFaultMotor1();
+
+    /*执行最后命令*/
+    MC_ProgramSpeedRampMotor1(MC_GetLastRampFinalSpeedMotor1(),1000);
+  }
+
+  if((State_Mark == IDLE) && (Fault_Mark == MC_NO_FAULTS))
+  {
+    MC_StartMotor1();
+  }
+}
 /* USER CODE END 0 */
 
 /**
@@ -171,6 +196,7 @@ int main(void)
   MX_TIM1_Init();
   MX_USART2_UART_Init();
   MX_MotorControl_Init();
+  MX_TIM3_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
@@ -189,6 +215,7 @@ int main(void)
   while (1)
   {
     HandsOn2();
+		HandsOn3();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

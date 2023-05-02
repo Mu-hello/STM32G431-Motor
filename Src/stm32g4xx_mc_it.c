@@ -84,11 +84,17 @@ void ADC1_2_IRQHandler(void)
 {
   /* USER CODE BEGIN ADC1_2_IRQn 0 */
 
+  volatile static uint16_t FOC_Cycle;
+  volatile static uint16_t FOC_Time;
+  TIM3->CNT = 0;
+  TIM3->CR1 |= 0x01;
+
   /* USER CODE END ADC1_2_IRQn 0 */
 
   // Clear Flags M1
   LL_ADC_ClearFlag_JEOS( ADC1 );
 
+  //高频任务
   (void)TSK_HighFrequencyTask();
 
  /* USER CODE BEGIN HighFreq */
@@ -96,7 +102,11 @@ void ADC1_2_IRQHandler(void)
  /* USER CODE END HighFreq  */
 
  /* USER CODE BEGIN ADC1_2_IRQn 1 */
-
+  TIM3->CR1 &= 0xFFFE;
+  FOC_Cycle = TIM3->CNT;
+  /*时间单位us*/
+  FOC_Time = (uint32_t)FOC_Cycle/170;
+  
  /* USER CODE END ADC1_2_IRQn 1 */
 }
 
