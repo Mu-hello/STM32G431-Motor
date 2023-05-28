@@ -3,7 +3,7 @@
 <title>Static Call Graph - [MCSDK01\MCSDK01.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image MCSDK01\MCSDK01.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6160001: Last Updated: Tue May  2 23:14:44 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6160001: Last Updated: Sun May 28 16:47:34 2023
 <BR><P>
 <H3>Maximum Stack Usage =        380 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -149,7 +149,7 @@ Global Symbols
 <P><STRONG><a name="[69]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(.text)
 </UL>
-<P><STRONG><a name="[17f]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[17c]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[70]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -159,15 +159,15 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[180]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[17d]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[181]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[17e]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[182]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[17f]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[183]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+<P><STRONG><a name="[180]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
 
-<P><STRONG><a name="[184]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[181]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
 
 <P><STRONG><a name="[17]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
@@ -432,16 +432,16 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCPA_dataLog
 </UL>
 
-<P><STRONG><a name="[185]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[182]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
 <P><STRONG><a name="[76]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[186]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[183]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[187]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[184]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[75]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -459,7 +459,7 @@ Global Symbols
 <LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_ADC1_Init
 </UL>
 
-<P><STRONG><a name="[188]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[185]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[77]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -469,13 +469,13 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[189]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[186]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[73]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[18a]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<P><STRONG><a name="[187]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 
 <P><STRONG><a name="[71]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
@@ -483,11 +483,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[18b]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[188]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
-<P><STRONG><a name="[18c]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[189]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
-<P><STRONG><a name="[18d]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[18a]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
 <P><STRONG><a name="[32]"></a>ADC1_2_IRQHandler</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, stm32g4xx_mc_it.o(.text.ADC1_2_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = ADC1_2_IRQHandler &rArr; TSK_HighFrequencyTask &rArr; STO_PLL_CalcElAngle &rArr; PI_Controller
@@ -1553,7 +1553,6 @@ Global Symbols
 
 <P><STRONG><a name="[126]"></a>PID_GetKI</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, pid_regulator.o(.text.PID_GetKI))
 <BR><BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RI_GetRegCommandParser
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[16c]"></a>PID_GetKIDivisor</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pid_regulator.o(.text.PID_GetKIDivisor))
@@ -1566,7 +1565,6 @@ Global Symbols
 
 <P><STRONG><a name="[11b]"></a>PID_GetKP</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, pid_regulator.o(.text.PID_GetKP))
 <BR><BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RI_GetRegCommandParser
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[134]"></a>PID_GetKPDivisorPOW2</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pid_regulator.o(.text.PID_GetKPDivisorPOW2))
@@ -1597,7 +1595,6 @@ Global Symbols
 
 <P><STRONG><a name="[13b]"></a>PID_SetKI</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pid_regulator.o(.text.PID_SetKI))
 <BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RI_SetRegCommandParser
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[10e]"></a>PID_SetKIDivisorPOW2</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, pid_regulator.o(.text.PID_SetKIDivisorPOW2))
@@ -1611,7 +1608,6 @@ Global Symbols
 
 <P><STRONG><a name="[13a]"></a>PID_SetKP</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pid_regulator.o(.text.PID_SetKP))
 <BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RI_SetRegCommandParser
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[13f]"></a>PID_SetKPDivisorPOW2</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, pid_regulator.o(.text.PID_SetKPDivisorPOW2))
@@ -1791,14 +1787,6 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SafetyTask
 </UL>
 
-<P><STRONG><a name="[17e]"></a>RCM_GetUserConv</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, regular_conversion_manager.o(.text.RCM_GetUserConv))
-<BR><BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[17d]"></a>RCM_GetUserConvState</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, regular_conversion_manager.o(.text.RCM_GetUserConvState))
-<BR><BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
 <P><STRONG><a name="[15a]"></a>RCM_ReadOngoingConv</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, regular_conversion_manager.o(.text.RCM_ReadOngoingConv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = RCM_ReadOngoingConv
 </UL>
@@ -1811,10 +1799,6 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RVBS_Init
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_Init
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[17c]"></a>RCM_RequestUserConv</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, regular_conversion_manager.o(.text.RCM_RequestUserConv))
-<BR><BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[157]"></a>REMNG_Calc</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, ramp_ext_mngr.o(.text.REMNG_Calc))
@@ -1861,7 +1845,9 @@ Global Symbols
 <LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_GetPhase
 <LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_GetNumberOfPhases
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKPDivisorPOW2
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKP
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKIDivisorPOW2
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKI
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKDDivisorPOW2
 <LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKD
 <LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_GetAvTemp_C
@@ -1882,8 +1868,6 @@ Global Symbols
 <LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetIab
 <LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetControlMode
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetAvrgMecSpeedUnit
-<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKP
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKI
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_ReceivedPacket
@@ -1896,7 +1880,9 @@ Global Symbols
 <LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_GetObserverGains
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_SetPhase
 <LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKPDivisorPOW2
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKP
 <LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKIDivisorPOW2
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKI
 <LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKDDivisorPOW2
 <LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKD
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCPA_cfgLog
@@ -1907,8 +1893,6 @@ Global Symbols
 <LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetIqdref
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_ExecTorqueRamp
 <LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_ExecSpeedRamp
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKP
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKI
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_ReceivedPacket
 </UL>
@@ -2463,17 +2447,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;REMNG_ExecRamp
 </UL>
 
-<P><STRONG><a name="[67]"></a>main</STRONG> (Thumb, 442 bytes, Stack size 80 bytes, main.o(.text.main))
+<P><STRONG><a name="[67]"></a>main</STRONG> (Thumb, 358 bytes, Stack size 80 bytes, main.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 380<LI>Call Chain = main &rArr; MX_ADC2_Init &rArr; HAL_ADC_Init &rArr; HAL_ADC_MspInit &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_RequestUserConv
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_RegisterRegConv
-<LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_GetUserConvState
-<LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_GetUserConv
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKP
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKI
-<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKP
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKI
+<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_RegisterRegConv
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART2_UART_Init
 <LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
 <LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM2_Init
@@ -2517,11 +2494,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R3_2_CurrentReadingPolarization
 </UL>
 
-<P><STRONG><a name="[18e]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[18b]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[18f]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[18c]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[190]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[18d]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 <P>
 <H3>
 Local Symbols

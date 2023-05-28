@@ -221,25 +221,25 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim2);  //启动TIM2，周期为500ms
   extern PID_Handle_t *pPIDSpeed[1];
   static int16_t Speed_Kp,Speed_Ki;
-  
-  /*得当前速度PI值*/
-  // Speed_Kp = PID_GetKP(pPIDSpeed[0]);
-  // Speed_Ki = PID_GetKI(pPIDSpeed[0]);
-
-  /*设定新PI值*/
-  // PID_SetKP(pPIDSpeed[0],Speed_Kp*2);
-  // PID_SetKI(pPIDSpeed[0],Speed_Ki*2);
-
-  // MC_ProgramSpeedRampMotor1(3000/6,1000);
-  // MC_StartMotor1();
+    
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    HandsOn2();
+    //HandsOn2();
 		//HandsOn3();
+    MC_ProgramSpeedRampMotor1(200/6,1000);
+		/*Start motor*/
+    MC_StartMotor1();
+    HAL_Delay(10000);
+		
+		
+    MC_ProgramSpeedRampMotor1(800/6,1000);
+		/*Start motor*/
+    MC_StartMotor1();
+    HAL_Delay(10000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

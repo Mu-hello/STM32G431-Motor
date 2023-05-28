@@ -544,10 +544,11 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
   else
   {
 #endif
-    int32_t wProportional_Term;
-    int32_t wIntegral_Term;
-    int32_t wOutput_32;
-    int32_t wIntegral_sum_temp;
+    //uk=kp*ek+Ki*(ek和)
+    int32_t wProportional_Term; //比例项计算结果，Kp*(ek-ek_1)
+    int32_t wIntegral_Term; //Ki*ek
+    int32_t wOutput_32; //输出
+    int32_t wIntegral_sum_temp; //Ki*(ek和)
     int32_t wDischarge = 0;
     int16_t hUpperOutputLimit = pHandle->hUpperOutputLimit;
     int16_t hLowerOutputLimit = pHandle->hLowerOutputLimit;
