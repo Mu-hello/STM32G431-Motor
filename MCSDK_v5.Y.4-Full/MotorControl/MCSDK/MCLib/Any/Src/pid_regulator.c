@@ -545,15 +545,15 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
   {
 #endif
     //uk=kp*ek+Ki*(ek和)
-    int32_t wProportional_Term; //比例项计算结果，Kp*(ek-ek_1)
+    int32_t wProportional_Term; //比例项计算结果，Kp*ek
     int32_t wIntegral_Term; //Ki*ek
     int32_t wOutput_32; //输出
-    int32_t wIntegral_sum_temp; //Ki*(ek和)
+    int32_t wIntegral_sum_temp; //积分项计算结果，Ki*(ek和)
     int32_t wDischarge = 0;
     int16_t hUpperOutputLimit = pHandle->hUpperOutputLimit;
     int16_t hLowerOutputLimit = pHandle->hLowerOutputLimit;
 
-    /* Proportional term computation*/
+    /* Proportional term computation比例项计算结果，Kp*ek*/
     wProportional_Term = pHandle->hKpGain * wProcessVarError;
 
     /* Integral term computation */
@@ -563,16 +563,17 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
     }
     else
     {
-      wIntegral_Term = pHandle->hKiGain * wProcessVarError;
-      wIntegral_sum_temp = pHandle->wIntegralTerm + wIntegral_Term;
+      wIntegral_Term = pHandle->hKiGain * wProcessVarError; //Ki*ek
+      //wIntegral_Term = pHandle->hKiGain * fitEk(wProcessVarError); //Ki*fit(ek)
+      wIntegral_sum_temp = pHandle->wIntegralTerm + wIntegral_Term; //积分项输出Ki*（ek和）=上一时刻积分项输出+Ki*ek
 
       if (wIntegral_sum_temp < 0)
       {
         if (pHandle->wIntegralTerm > 0)
         {
           if (wIntegral_Term > 0)
-          {
-            wIntegral_sum_temp = INT32_MAX;
+          { // 当前积分项输出<0，且上一时刻积分项输出>0，且当前Ki*ek>0，说明溢出了
+            wIntegral_sum_temp = INT32_MAX;   
           }
           else
           {
@@ -587,10 +588,10 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
       else
       {
         if (pHandle->wIntegralTerm < 0)
-        {
+        { 
           if (wIntegral_Term < 0)
-          {
-            wIntegral_sum_temp = -INT32_MAX;
+          { // 当前积分项输出>0，且上一时刻积分项输出<0，且当前Ki*ek<0，说明溢出了
+            wIntegral_sum_temp = -INT32_MAX;  
           }
           else
           {
@@ -613,7 +614,7 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
       }
       else
       {
-        pHandle->wIntegralTerm = wIntegral_sum_temp;
+        pHandle->wIntegralTerm = wIntegral_sum_temp;  //上一时刻积分输出=积分项输出Ki*（ek和）
       }
     }
 
@@ -628,28 +629,65 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
     wOutput_32 = (wProportional_Term / (int32_t)pHandle->hKpDivisor)
               + (pHandle->wIntegralTerm / (int32_t)pHandle->hKiDivisor);
 #endif
-
+    //输出限幅，wDischarge存放限幅值和理论输出之间的差值
     if (wOutput_32 > hUpperOutputLimit)
     {
       wDischarge = hUpperOutputLimit - wOutput_32;
       wOutput_32 = hUpperOutputLimit;
+      if(wIntegral_Term>0)
+      {
+        //抗积分饱和
+        wDischarge-=wIntegral_Term; //输出已经到达上界且ek>0,消除Ki*ek的影响
+      }
+
     }
     else if (wOutput_32 < hLowerOutputLimit)
     {
       wDischarge = hLowerOutputLimit - wOutput_32;
       wOutput_32 = hLowerOutputLimit;
+      if(wIntegral_Term<0)
+      {
+        //抗积分饱和
+        wDischarge-=wIntegral_Term; //输出已经到达下界且ek<0,消除Ki*ek的影响
+      }
     }
     else
     {
       /* Nothing to do here */
     }
 
-    pHandle->wIntegralTerm += wDischarge;
+    pHandle->wIntegralTerm += wDischarge;   //上一时刻积分输出+=差值
     returnValue = (int16_t)wOutput_32;
 #ifdef NULL_PTR_CHECK_PID_REG
   }
 #endif
   return (returnValue);
+}
+
+int32_t fitEk(int32_t wProcessVarError)
+{
+  float temp;
+  if(wProcessVarError <= -1500)
+  {
+    temp = wProcessVarError * 0.0;
+  }
+  else if(wProcessVarError <= -300)
+  {
+    temp = wProcessVarError * ((1500 + wProcessVarError)/(1500 - 300));
+  }
+  else if(wProcessVarError <= 300)
+  {
+    temp = wProcessVarError * 1.0;
+  }
+  else if(wProcessVarError <= 1500)
+  {
+    temp = wProcessVarError * ((1500 - wProcessVarError)/(1500 - 300));
+  }
+  else
+  {
+    temp = wProcessVarError * 0.0;
+  }
+  return (int32_t)temp;
 }
 
 #if defined (CCMRAM)
