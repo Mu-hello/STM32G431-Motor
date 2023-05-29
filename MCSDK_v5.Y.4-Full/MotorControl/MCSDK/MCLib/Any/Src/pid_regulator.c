@@ -552,6 +552,7 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
     int32_t wDischarge = 0;
     int16_t hUpperOutputLimit = pHandle->hUpperOutputLimit;
     int16_t hLowerOutputLimit = pHandle->hLowerOutputLimit;
+    // pHandle->wPrevProcessVarError是ek_1
 
     /* Proportional term computation比例项计算结果，Kp*ek*/
     wProportional_Term = pHandle->hKpGain * wProcessVarError;
@@ -564,6 +565,8 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
     else
     {
       //wIntegral_Term = pHandle->hKiGain * wProcessVarError; //Ki*ek
+      wIntegral_Term = pHandle->hKiGain * (wProcessVarError + pHandle->wPrevProcessVarError) * 0.5; //Ki*(ek+ek_1)/2,梯形积分方法
+      /*变速积分
 			float temp;
 			if(wProcessVarError <= -1500) //(-inf,-1500]
 			{
@@ -588,6 +591,7 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
 				temp = wProcessVarError * 0.0;
 			}			
       wIntegral_Term = pHandle->hKiGain * (int32_t)(temp); //Ki*fit(ek)，变速积分PID
+      */
       wIntegral_sum_temp = pHandle->wIntegralTerm + wIntegral_Term; //积分项输出Ki*（ek和）=上一时刻积分项输出+Ki*ek
       
       if (wIntegral_sum_temp < 0)
