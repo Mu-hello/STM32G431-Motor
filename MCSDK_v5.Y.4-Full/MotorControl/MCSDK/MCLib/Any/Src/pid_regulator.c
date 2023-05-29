@@ -563,10 +563,33 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
     }
     else
     {
-      wIntegral_Term = pHandle->hKiGain * wProcessVarError; //Ki*ek
-      //wIntegral_Term = pHandle->hKiGain * fitEk(wProcessVarError); //Ki*fit(ek)
+      //wIntegral_Term = pHandle->hKiGain * wProcessVarError; //Ki*ek
+			float temp;
+			if(wProcessVarError <= -1500) //(-inf,-1500]
+			{
+				temp = wProcessVarError * 1.0;
+			}
+			else if(wProcessVarError <= -300) //(-1500,-300]
+			{
+				//temp = wProcessVarError * ((float)(1500 + wProcessVarError)/(1500 - 300));
+				temp = wProcessVarError * 1.0;
+			}
+			else if(wProcessVarError <= 300)  //(-300,300]
+			{
+				temp = wProcessVarError * 1.0;
+			}
+			else if(wProcessVarError <= 1500)   //(300,3000]
+			{
+				//temp = wProcessVarError * ((float)(1500 - wProcessVarError)/(1500.0 - 300.0));
+				temp = wProcessVarError * 1.0;		//这里只要小于1.0就不行了不知为何
+			}
+			else  //(1500,inf]
+			{
+				temp = wProcessVarError * 0.0;
+			}			
+      wIntegral_Term = pHandle->hKiGain * (int32_t)(temp); //Ki*fit(ek)，变速积分PID
       wIntegral_sum_temp = pHandle->wIntegralTerm + wIntegral_Term; //积分项输出Ki*（ek和）=上一时刻积分项输出+Ki*ek
-
+      
       if (wIntegral_sum_temp < 0)
       {
         if (pHandle->wIntegralTerm > 0)
@@ -664,31 +687,6 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
   return (returnValue);
 }
 
-int32_t fitEk(int32_t wProcessVarError)
-{
-  float temp;
-  if(wProcessVarError <= -1500)
-  {
-    temp = wProcessVarError * 0.0;
-  }
-  else if(wProcessVarError <= -300)
-  {
-    temp = wProcessVarError * ((1500 + wProcessVarError)/(1500 - 300));
-  }
-  else if(wProcessVarError <= 300)
-  {
-    temp = wProcessVarError * 1.0;
-  }
-  else if(wProcessVarError <= 1500)
-  {
-    temp = wProcessVarError * ((1500 - wProcessVarError)/(1500 - 300));
-  }
-  else
-  {
-    temp = wProcessVarError * 0.0;
-  }
-  return (int32_t)temp;
-}
 
 #if defined (CCMRAM)
 #if defined (__ICCARM__)

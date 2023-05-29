@@ -1,7 +1,7 @@
 Dependencies for Project 'MCSDK01', Target 'MCSDK01': (DO NOT MODIFY !)
 CompilerVersion: 6160000::V6.16::ARMCLANG
 F (startup_stm32g431xx.s)(0x6451183F)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__MICROLIB SETA 1"-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 535" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32G431xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o mcsdk01/startup_stm32g431xx.o)
-F (../Src/main.c)(0x647366B4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/main.o -MD)
+F (../Src/main.c)(0x64742302)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/main.o -MD)
 I (..\Inc\main.h)(0x64489E83)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x642428EF)
 I (..\Inc\stm32g4xx_hal_conf.h)(0x6451183C)
@@ -44,7 +44,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -143,7 +143,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -235,7 +235,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -327,7 +327,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -419,7 +419,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -511,7 +511,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -602,7 +602,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -710,7 +710,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cordic.h)(0x642428EF)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pwm_curr_fdbk.h)(0x6177A998)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\fast_div.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_torq_ctrl.h)(0x6176BBE6)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_pos_fdbk.h)(0x6176BBE6)
 I (..\Inc\mc_api.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
@@ -783,7 +783,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -942,7 +942,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -1109,7 +1109,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_opamp.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cordic.h)(0x642428EF)
 I (..\Inc\regular_conversion_manager.h)(0x64489E59)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\revup_ctrl.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_torq_ctrl.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_pos_fdbk.h)(0x6176BBE6)
@@ -1253,7 +1253,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_comp.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_opamp.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cordic.h)(0x642428EF)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_torq_ctrl.h)(0x6176BBE6)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_pos_fdbk.h)(0x6176BBE6)
 I (..\Inc\mc_interface.h)(0x64489E59)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pwm_curr_fdbk.h)(0x6177A998)
@@ -1288,7 +1288,7 @@ I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\sto_pll_speed_pos_fdbk.
 I (..\Inc\mc_api.h)(0x64489E58)
 F (../Src/stm32g4xx_mc_it.c)(0x6451183A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/stm32g4xx_mc_it.o -MD)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
@@ -1421,7 +1421,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -1530,7 +1530,7 @@ I (..\Inc\register_interface.h)(0x64489E5A)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mcp.h)(0x6177A998)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mcptl.h)(0x6176BBE6)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\revup_ctrl.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_torq_ctrl.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_pos_fdbk.h)(0x6176BBE6)
@@ -1912,7 +1912,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -2004,7 +2004,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -2095,7 +2095,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -2187,7 +2187,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h)(0x642428EF)
 I (..\Inc\motorcontrol.h)(0x64489E58)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (..\Inc\mc_stm_types.h)(0x64489E58)
@@ -3498,8 +3498,8 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_opamp.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cordic.h)(0x642428EF)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\virtual_speed_sensor.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_pos_fdbk.h)(0x6176BBE6)
-F (../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c)(0x64736575)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/pid_regulator.o -MD)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+F (../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c)(0x6474240D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/pid_regulator.o -MD)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h)(0x61E7B788)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
 I (D:\Stm32\KEIL\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
@@ -3843,7 +3843,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_comp.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_opamp.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cordic.h)(0x642428EF)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_torq_ctrl.h)(0x6176BBE6)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_pos_fdbk.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\virtual_speed_sensor.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\sto_speed_pos_fdbk.h)(0x6176BBE6)
@@ -3961,7 +3961,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_comp.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_opamp.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cordic.h)(0x642428EF)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_pos_fdbk.h)(0x6176BBE6)
 F (../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_pll_speed_pos_fdbk.c)(0x61BC6CA4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/sto_pll_speed_pos_fdbk.o -MD)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\sto_pll_speed_pos_fdbk.h)(0x6176BBE6)
@@ -4021,7 +4021,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_comp.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_opamp.h)(0x642428EF)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cordic.h)(0x642428EF)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\sto_speed_pos_fdbk.h)(0x6176BBE6)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\Inc\mc_math.h)(0x64489E59)
 F (../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c)(0x61BC6CA4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/Any/Inc -I ../MCSDK_v5.Y.4-Full/MotorControl/MCSDK/MCLib/G4xx/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include-I./RTE/_MCSDK01-ID:/Stm32/KEIL/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-ID:/Stm32/KEIL/Arm/Packs/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32G431xx -D_RTE_ -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32G431xx-o mcsdk01/virtual_speed_sensor.o -MD)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\virtual_speed_sensor.h)(0x6176BBE6)
@@ -4198,7 +4198,7 @@ I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mcp.h)(0x6177A998)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\mcptl.h)(0x6176BBE6)
 I (..\Inc\register_interface.h)(0x64489E5A)
 I (..\Inc\mc_config.h)(0x64489E58)
-I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x6473642D)
+I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h)(0x647420D0)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\revup_ctrl.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_torq_ctrl.h)(0x6176BBE6)
 I (..\MCSDK_v5.Y.4-Full\MotorControl\MCSDK\MCLib\Any\Inc\speed_pos_fdbk.h)(0x6176BBE6)

@@ -227,7 +227,7 @@ int main(void)
 
   //PID_SetKP(pPIDSpeed[0] , Speed_Kp*2);
   //PID_SetKI(pPIDSpeed[0] , Speed_Ki*2);
-    
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -235,7 +235,7 @@ int main(void)
   while (1)
   {
     //HandsOn2();
-		//HandsOn3();
+		HandsOn3();
 		MC_ProgramSpeedRampMotor1(300/6,0);
 		/*Start motor*/
     MC_StartMotor1();
