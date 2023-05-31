@@ -236,18 +236,16 @@ int main(void)
   {
     //HandsOn2();
 		HandsOn3();
-		MC_ProgramSpeedRampMotor1(300/6,0);
+		MC_ProgramSpeedRampMotor1(300/6,100);
 		/*Start motor*/
     MC_StartMotor1();
-    HAL_Delay(10000);
+    HAL_Delay(5000);
+		HandsOn3();
 		
-		
-    MC_ProgramSpeedRampMotor1(1200/6,0);
+    MC_ProgramSpeedRampMotor1(1200/6,100);
 		/*Start motor*/
     MC_StartMotor1();
-    HAL_Delay(10000);
-		// Speed_Kp = PID_GetKP(pPIDSpeed[0]);
-    // Speed_Ki = PID_GetKI(pPIDSpeed[0]);
+    HAL_Delay(5000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

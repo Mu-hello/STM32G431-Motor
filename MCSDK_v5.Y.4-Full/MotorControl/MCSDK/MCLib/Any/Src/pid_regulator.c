@@ -547,16 +547,20 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
     //uk=kp*ek+Ki*(ek和)
     int32_t wProportional_Term; //比例项计算结果，Kp*ek
     int32_t wIntegral_Term; //Ki*ek
-    int32_t wOutput_32; //输出
+    int32_t wOutput_32; //PI控制器输出uk
     int32_t wIntegral_sum_temp; //积分项计算结果，Ki*(ek和)
-    int32_t wDischarge = 0;
-    int16_t hUpperOutputLimit = pHandle->hUpperOutputLimit;
-    int16_t hLowerOutputLimit = pHandle->hLowerOutputLimit;
+    int32_t wDischarge = 0; //wDischarge存放限幅值和理论输出之间的差值
+    int16_t hUpperOutputLimit = pHandle->hUpperOutputLimit; //输出上限
+    int16_t hLowerOutputLimit = pHandle->hLowerOutputLimit; //输出下限
+    int32_t wOutput_32_1; //uk_1=Kp*ek_1+Ki*(ek_1和)
     // pHandle->wPrevProcessVarError是ek_1
-
+    int32_t wProcessVarError_temp;
+    float beta;
+    wOutput_32_1 = (pHandle->hKpGain * pHandle->wPrevProcessVarError >> pHandle->hKpDivisorPOW2) + (pHandle->wIntegralTerm >> pHandle->hKiDivisorPOW2);
+    
     /* Proportional term computation比例项计算结果，Kp*ek*/
     wProportional_Term = pHandle->hKpGain * wProcessVarError;
-
+    
     /* Integral term computation */
     if (0 == pHandle->hKiGain)
     {
@@ -564,36 +568,44 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
     }
     else
     {
-      //wIntegral_Term = pHandle->hKiGain * wProcessVarError; //Ki*ek
-      wIntegral_Term = pHandle->hKiGain * (wProcessVarError + pHandle->wPrevProcessVarError) * 0.5; //Ki*(ek+ek_1)/2,梯形积分方法
-      /*变速积分
-			float temp;
-			if(wProcessVarError <= -1500) //(-inf,-1500]
-			{
-				temp = wProcessVarError * 1.0;
-			}
-			else if(wProcessVarError <= -300) //(-1500,-300]
-			{
-				//temp = wProcessVarError * ((float)(1500 + wProcessVarError)/(1500 - 300));
-				temp = wProcessVarError * 1.0;
-			}
-			else if(wProcessVarError <= 300)  //(-300,300]
-			{
-				temp = wProcessVarError * 1.0;
-			}
-			else if(wProcessVarError <= 1500)   //(300,3000]
-			{
-				//temp = wProcessVarError * ((float)(1500 - wProcessVarError)/(1500.0 - 300.0));
-				temp = wProcessVarError * 1.0;		//这里只要小于1.0就不行了不知为何
-			}
-			else  //(1500,inf]
-			{
-				temp = wProcessVarError * 0.0;
-			}			
-      wIntegral_Term = pHandle->hKiGain * (int32_t)(temp); //Ki*fit(ek)，变速积分PID
-      */
-      wIntegral_sum_temp = pHandle->wIntegralTerm + wIntegral_Term; //积分项输出Ki*（ek和）=上一时刻积分项输出+Ki*ek
+      wIntegral_Term = pHandle->hKiGain * wProcessVarError; //Ki*ek
+      //wIntegral_Term = pHandle->hKiGain * (wProcessVarError + pHandle->wPrevProcessVarError) * 0.5; //Ki*(ek+ek_1)/2,梯形积分方法
       
+      /*
+      //变速积分
+			if(wProcessVarError < 0)
+			{
+				wProcessVarError_temp = - wProcessVarError;
+			}
+      else
+      {
+        wProcessVarError_temp = wProcessVarError;
+      }
+			if(wProcessVarError_temp <= 1000) //(0,1000]
+			{
+				beta = 1;
+			}
+			else if(wProcessVarError_temp <= 2000)   //(1000,2000]
+			{
+				beta = (2000 - wProcessVarError_temp)/(1000);
+				//beta = 1;
+			}
+			else  //(2000,inf]
+			{
+				beta = 0;
+			}
+
+      wIntegral_Term = pHandle->hKiGain * wProcessVarError * beta; //Ki*ek*beta，变速积分PI
+      */
+      //抗积分饱和
+      if((wOutput_32_1 > hUpperOutputLimit && wProcessVarError > 0) || (wOutput_32_1 < hLowerOutputLimit && wProcessVarError < 0))
+      {
+        wIntegral_sum_temp = pHandle->wIntegralTerm; //积分项输出Ki*（ek和）=上一时刻积分项输出,不更新Uik
+      }
+      else{
+        wIntegral_sum_temp = pHandle->wIntegralTerm + wIntegral_Term; //积分项输出Ki*（ek和）=上一时刻积分项输出+Ki*ek
+      }
+            
       if (wIntegral_sum_temp < 0)
       {
         if (pHandle->wIntegralTerm > 0)
@@ -630,7 +642,7 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
           /* Nothing to do */
         }
       }
-
+      
       if (wIntegral_sum_temp > pHandle->wUpperIntegralLimit)
       {
         pHandle->wIntegralTerm = pHandle->wUpperIntegralLimit;
@@ -660,23 +672,12 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
     if (wOutput_32 > hUpperOutputLimit)
     {
       wDischarge = hUpperOutputLimit - wOutput_32;
-      wOutput_32 = hUpperOutputLimit;
-      if(wIntegral_Term>0)
-      {
-        //抗积分饱和
-        wDischarge-=wIntegral_Term; //输出已经到达上界且ek>0,消除Ki*ek的影响
-      }
-
+      wOutput_32 = hUpperOutputLimit;      
     }
     else if (wOutput_32 < hLowerOutputLimit)
     {
       wDischarge = hLowerOutputLimit - wOutput_32;
       wOutput_32 = hLowerOutputLimit;
-      if(wIntegral_Term<0)
-      {
-        //抗积分饱和
-        wDischarge-=wIntegral_Term; //输出已经到达下界且ek<0,消除Ki*ek的影响
-      }
     }
     else
     {
