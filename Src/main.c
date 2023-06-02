@@ -158,7 +158,9 @@ void HandsOn3(void)
     MC_AcknowledgeFaultMotor1();
 
     /*执行最后命令*/
-    MC_ProgramSpeedRampMotor1(MC_GetLastRampFinalSpeedMotor1(),1000);
+    //MC_ProgramSpeedRampMotor1(MC_GetLastRampFinalSpeedMotor1(),1000);
+    MC_ProgramSpeedRampMotor1(1000,1000);
+    
   }
 
   if((State_Mark == IDLE) && (Fault_Mark == MC_NO_FAULTS))
@@ -221,31 +223,28 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim2);  //启动TIM2，周期为500ms
   extern PID_Handle_t *pPIDSpeed[1];
   static int16_t Speed_Kp,Speed_Ki;
-
-  // Speed_Kp = PID_GetKP(pPIDSpeed[0]);
-  // Speed_Ki = PID_GetKI(pPIDSpeed[0]);
-
-  //PID_SetKP(pPIDSpeed[0] , Speed_Kp*2);
-  //PID_SetKI(pPIDSpeed[0] , Speed_Ki*2);
-
+  
+  MC_ProgramSpeedRampMotor1(600/6,10);
+	MC_StartMotor1();
+	HAL_Delay(1000);
+	
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    //HandsOn2();
-		HandsOn3();
-		MC_ProgramSpeedRampMotor1(300/6,100);
-		/*Start motor*/
-    MC_StartMotor1();
-    HAL_Delay(5000);
-		HandsOn3();
+    // HandsOn2();
 		
-    MC_ProgramSpeedRampMotor1(1200/6,100);
-		/*Start motor*/
-    MC_StartMotor1();
-    HAL_Delay(5000);
+		MC_ProgramSpeedRampMotor1(1200/6,10);
+    HandsOn3();
+		HAL_Delay(4000);
+		
+		
+    MC_ProgramSpeedRampMotor1(500/6,10);
+    HandsOn3();
+    HAL_Delay(4000);
+    
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

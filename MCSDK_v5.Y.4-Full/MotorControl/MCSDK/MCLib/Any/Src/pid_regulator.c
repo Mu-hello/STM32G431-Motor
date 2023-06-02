@@ -26,6 +26,9 @@
 #include "pid_regulator.h"
 #include "mc_type.h"
 
+#define EKUPTH 2000
+#define EKLOWTH 1000
+
 /** @addtogroup MCSDK
   * @{
   */
@@ -568,10 +571,9 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
     }
     else
     {
-      wIntegral_Term = pHandle->hKiGain * wProcessVarError; //Ki*ek
+      // wIntegral_Term = pHandle->hKiGain * wProcessVarError; //Ki*ek
       //wIntegral_Term = pHandle->hKiGain * (wProcessVarError + pHandle->wPrevProcessVarError) * 0.5; //Ki*(ek+ek_1)/2,梯形积分方法
       
-      /*
       //变速积分
 			if(wProcessVarError < 0)
 			{
@@ -581,23 +583,26 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
       {
         wProcessVarError_temp = wProcessVarError;
       }
-			if(wProcessVarError_temp <= 1000) //(0,1000]
+			if(wProcessVarError_temp <= EKLOWTH) 
 			{
-				beta = 1;
+				beta = 1.0;
 			}
-			else if(wProcessVarError_temp <= 2000)   //(1000,2000]
+			else if(wProcessVarError_temp <= EKUPTH) 
 			{
-				beta = (2000 - wProcessVarError_temp)/(1000);
-				//beta = 1;
-			}
-			else  //(2000,inf]
+        
+        beta = (float)(EKUPTH-wProcessVarError_temp)/(float)(EKUPTH-EKLOWTH);
+        
+      }
+			else
 			{
-				beta = 0;
+				beta = 0.0;
 			}
 
-      wIntegral_Term = pHandle->hKiGain * wProcessVarError * beta; //Ki*ek*beta，变速积分PI
-      */
-      //抗积分饱和
+      wIntegral_Term = pHandle->hKiGain * (int32_t)(wProcessVarError * beta); //Ki*ek*beta，变速积分PI
+      
+
+      
+      // 抗积分饱和
       if((wOutput_32_1 > hUpperOutputLimit && wProcessVarError > 0) || (wOutput_32_1 < hLowerOutputLimit && wProcessVarError < 0))
       {
         wIntegral_sum_temp = pHandle->wIntegralTerm; //积分项输出Ki*（ek和）=上一时刻积分项输出,不更新Uik
@@ -605,7 +610,8 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
       else{
         wIntegral_sum_temp = pHandle->wIntegralTerm + wIntegral_Term; //积分项输出Ki*（ek和）=上一时刻积分项输出+Ki*ek
       }
-            
+      
+      //wIntegral_sum_temp = pHandle->wIntegralTerm + wIntegral_Term; //积分项输出Ki*（ek和）=上一时刻积分项输出+Ki*ek
       if (wIntegral_sum_temp < 0)
       {
         if (pHandle->wIntegralTerm > 0)

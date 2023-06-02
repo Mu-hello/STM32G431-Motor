@@ -815,14 +815,22 @@ __weak uint8_t TSK_HighFrequencyTask(void)
 
   uint16_t hFOCreturn;
   uint8_t bMotorNbr = 0;
-
+  /*
+  typedef struct
+  {
+    alphabeta_t  Valfa_beta;
+    alphabeta_t  Ialfa_beta;
+    uint16_t         Vbus;
+  } Observer_Inputs_t;*/
   Observer_Inputs_t STO_Inputs; /*  only if sensorless main*/
-
+  //右边为定子参考系α-β相电压
   STO_Inputs.Valfa_beta = FOCVars[M1].Valphabeta;  /* only if sensorless*/
   if (SWITCH_OVER == Mci[M1].State)
   {
+    //检查沉降的斜坡是否已经完成
     if (!REMNG_RampCompleted(pREMNG[M1]))
     {
+      //更新状态观测器的输入
       FOCVars[M1].Iqdref.q = (int16_t)REMNG_Calc(pREMNG[M1]);
     }
   }
@@ -839,10 +847,12 @@ __weak uint8_t TSK_HighFrequencyTask(void)
   /* USER CODE END HighFrequencyTask SINGLEDRIVE_2 */
   if(hFOCreturn == MC_FOC_DURATION)
   {
+    //为硬件和软件处理故障提供时钟
     MCI_FaultProcessing(&Mci[M1], MC_FOC_DURATION, 0);
   }
   else
   {
+    //观测器+PLL
     bool IsAccelerationStageReached = RUC_FirstAccelerationStageReached(&RevUpControlM1);
     STO_Inputs.Ialfa_beta = FOCVars[M1].Ialphabeta; /*  only if sensorless*/
     STO_Inputs.Vbus = VBS_GetAvBusVoltage_d(&(BusVoltageSensor_M1._Super)); /*  only for sensorless*/
@@ -864,6 +874,7 @@ __weak uint8_t TSK_HighFrequencyTask(void)
     //
     /* USER CODE END HighFrequencyTask SINGLEDRIVE_3 */
   }
+  //更新DAC输出
   DAC_Exec(&DAC_Handle);
   /* USER CODE BEGIN HighFrequencyTask 1 */
 
@@ -908,21 +919,23 @@ inline uint16_t FOC_CurrControllerM1(void)
   uint16_t hCodeError;
   SpeednPosFdbk_Handle_t *speedHandle;
 
-  speedHandle = STC_GetSpeedSensor(pSTC[M1]);
-  hElAngle = SPD_GetElAngle(speedHandle);
+  speedHandle = STC_GetSpeedSensor(pSTC[M1]); //返回FOC使用的速度传感器
+  hElAngle = SPD_GetElAngle(speedHandle);   //返回最后计算的转子电速度，以s16度表示
+  //返回最后的瞬时计算电速度，控制周期时计算转子电角速度的周期
   hElAngle += SPD_GetInstElSpeedDpp(speedHandle)*PARK_ANGLE_COMPENSATION_FACTOR;
-  PWMC_GetPhaseCurrents(pwmcHandle[M1], &Iab);
-  RCM_ReadOngoingConv();
-  RCM_ExecNextConv();
-  Ialphabeta = MCM_Clarke(Iab);
-  Iqd = MCM_Park(Ialphabeta, hElAngle);
+  PWMC_GetPhaseCurrents(pwmcHandle[M1], &Iab);  //返回ADC读取的电机相电流
+  RCM_ReadOngoingConv();  //读取正在进行的定期转换的结果
+  RCM_ExecNextConv();   //开始下一次计划的定期转换
+  Ialphabeta = MCM_Clarke(Iab); //Clarke
+  Iqd = MCM_Park(Ialphabeta, hElAngle); //Park
   Vqd.q = PI_Controller(pPIDIq[M1], (int32_t)(FOCVars[M1].Iqdref.q) - Iqd.q);
   Vqd.d = PI_Controller(pPIDId[M1], (int32_t)(FOCVars[M1].Iqdref.d) - Iqd.d);
 
   Vqd = Circle_Limitation(pCLM[M1], Vqd);
+  //返回最后的瞬时计算电角速度，控制周期时计算转子电角速度的周期
   hElAngle += SPD_GetInstElSpeedDpp(speedHandle)*REV_PARK_ANGLE_COMPENSATION_FACTOR;
-  Valphabeta = MCM_Rev_Park(Vqd, hElAngle);
-  hCodeError = PWMC_SetPhaseVoltage(pwmcHandle[M1], Valphabeta);
+  Valphabeta = MCM_Rev_Park(Vqd, hElAngle);   //反park
+  hCodeError = PWMC_SetPhaseVoltage(pwmcHandle[M1], Valphabeta);//将输入电压vα和vβ转换为占空比，并送入逆变器
 
   FOCVars[M1].Vqd = Vqd;
   FOCVars[M1].Iab = Iab;
